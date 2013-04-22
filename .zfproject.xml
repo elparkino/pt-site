@@ -11,11 +11,33 @@
           <actionMethod actionName="index"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="FormSubmit">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="submit"/>
+        </controllerFile>
       </controllersDirectory>
-      <formsDirectory enabled="false"/>
+      <formsDirectory>
+        <formFile formName="Download"/>
+      </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory/>
-      <modulesDirectory enabled="false"/>
+      <modulesDirectory>
+        <moduleDirectory moduleName="downloadForm">
+          <configsDirectory enabled="false"/>
+          <controllersDirectory/>
+          <formsDirectory>
+            <formFile formName="Download"/>
+          </formsDirectory>
+          <layoutsDirectory enabled="false"/>
+          <modelsDirectory/>
+          <servicesDirectory enabled="false"/>
+          <viewsDirectory>
+            <viewScriptsDirectory/>
+            <viewHelpersDirectory/>
+            <viewFiltersDirectory/>
+          </viewsDirectory>
+        </moduleDirectory>
+      </modulesDirectory>
       <servicesDirectory enabled="false"/>
       <viewsDirectory>
         <viewScriptsDirectory>
@@ -24,6 +46,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Error">
             <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="FormSubmit">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="FormSubmit">
+            <viewScriptFile forActionName="submit"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
